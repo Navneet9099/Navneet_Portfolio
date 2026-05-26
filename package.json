@@ -1,0 +1,8 @@
+{
+  "name": "navneet-portfolio",
+  "version": "1.0.0",
+  "description": "Cyberpunk Developer Portfolio - Navneet Kesarwani",
+  "scripts": {
+    "start": "npx -y http-server . -p 8080"
+  }
+}

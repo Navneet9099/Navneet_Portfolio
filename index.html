@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Navneet Kesarwani | Full Stack Developer & DevOps Enthusiast</title>
+  <meta name="description" content="Personal Portfolio of Navneet Kesarwani — SDE Intern @ Codeinbound LLP, ACM Web Co-Head, and B.Tech CSE student building production-grade web systems with React, TypeScript, Redux, and Node.js." />
+  <meta name="keywords" content="Navneet Kesarwani, Full Stack Developer, React Developer, SDE Intern, DIT University, ACM Web Co-Head, DevOps, GCP, Docker, Portfolio, Web Engineer" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Navneet Kesarwani | Full Stack Developer" />
+  <meta property="og:description" content="Portfolio of Navneet Kesarwani — SDE Intern, ACM Web Co-Head, React/TypeScript Developer." />
+  <meta property="og:image" content="assets/img/og-image.png" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Navneet Kesarwani | Full Stack Developer" />
+  <meta property="twitter:description" content="Portfolio of Navneet Kesarwani — SDE Intern, ACM Web Co-Head, React/TypeScript Developer." />
+  <meta property="twitter:image" content="assets/img/og-image.png" />
+
+  <!-- Preconnect for Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Cyber Backdrop Overlays -->
+  <div class="noise-overlay"></div>
+  <div class="grid-backdrop"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Custom Crosshair Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-ring"></div>
+
+  <!-- Mobile Hamburger Navigation Trigger -->
+  <button class="mobile-nav-toggle" id="mobile-nav-trigger" aria-label="Toggle Navigation">
+    <i class="lucide-menu"></i>
+  </button>
+
+  <div class="app-container">
+    
+    <!-- --- SIDEBAR NAV HUD --- -->
+    <aside class="nav-hud" id="nav-sidebar-hud">
+      <div class="hud-top">
+        <div class="hud-logo">
+          NK<span>_DEV</span>
+        </div>
+        <div class="hud-system-status">
+          <span class="status-indicator"></span>SYSTEM: NK_V1.0 // ACTIVE
+        </div>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item active">
+            <a href="#hero"><i class="lucide-terminal"></i>SYS_INIT</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects"><i class="lucide-cpu"></i>PROJ_MODULES</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience"><i class="lucide-git-branch"></i>EVOLUTION</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills"><i class="lucide-key"></i>TOOLKIT</a>
+          </li>
+          <li class="nav-item">
+            <a href="#metrics"><i class="lucide-activity"></i>TELEMETRY</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact"><i class="lucide-send"></i>COMM_LINK</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hud-footer">
+        <div>STATUS: <span class="hud-footer-version">READY_FOR_HIRE</span></div>
+        <div style="margin-top: 0.25rem;">© 2026 NK_SYSTEM</div>
+      </div>
+    </aside>
+
+    <!-- --- MAIN CONTENT WINDOW --- -->
+    <main class="main-content">
+      
+      <!-- SECTION 01: HERO -->
+      <section id="hero">
+        <div class="scanline-overlay"></div>
+        <div class="hero-layout">
+          <div class="hero-text reveal-element">
+            <div class="hero-subtitle">SYS_INIT // NK_V1.0 // CORE_ACTIVE</div>
+            <h1 class="hero-name">NAVNEET<br>KESARWANI</h1>
+            <p class="hero-desc">
+              Building production-grade web systems — from highly responsive UI components to cloud infrastructure. 
+              <span>SDE Intern @ Codeinbound</span> | <span>ACM Web Co-Head</span> | <span>DIT University '27</span>
+            </p>
+            <div class="hero-ctas">
+              <a href="#projects" class="cyber-btn">
+                VIEW PROJECTS <i class="lucide-arrow-right"></i>
+              </a>
+              <a href="assets/resume.pdf" download="Navneet_Kesarwani_Resume.pdf" class="cyber-btn cyber-btn-secondary">
+                DOWNLOAD RESUME <i class="lucide-download"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Simulated Cyber Terminal widget -->
+          <div class="terminal-widget reveal-element delay-200 glow-cycle">
+            <div class="terminal-header">
+              <div class="terminal-controls">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+              </div>
+              <div class="terminal-title">TERMINAL // NK_BOOT_SEQUENCE</div>
+              <div><i class="lucide-shield-check" style="color: var(--accent-primary); font-size: 0.8rem;"></i></div>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line"><span class="terminal-prompt">></span>Initializing NK_PORTFOLIO v1.0...</div>
+              <div class="terminal-line"><span class="terminal-prompt">></span>Loading modules: Core & UI Components...</div>
+              <div class="terminal-line"><span class="terminal-prompt">></span>React, Redux Toolkit, TypeScript, Next.js <span class="terminal-success">✓</span></div>
+              <div class="terminal-line"><span class="terminal-prompt">></span>Loading pipelines: Docker, GCP Cloud Run, CI/CD...</div>
+              <div class="terminal-line"><span class="terminal-prompt">></span>Docker Containers, GCP Artifact Registry <span class="terminal-success">✓</span></div>
+              <div class="terminal-line"><span class="terminal-prompt">></span>Loading languages: JS/TS, Python, C++, Java... <span class="terminal-success">✓</span></div>
+              <div class="terminal-line"><span class="terminal-prompt">></span>Connecting telemetry parameters... <span class="terminal-success">✓</span></div>
+              <div class="terminal-line"><span class="terminal-prompt">></span>Status: READY_FOR_DEPLOYMENT <span class="terminal-success">✓</span></div>
+              <div class="terminal-line"><span class="terminal-prompt">></span><span class="terminal-cursor"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          SCROLL TO EXPLORE <i class="lucide-chevrons-down"></i>
+        </div>
+      </section>
+
+      <!-- SECTION 02: PROJECTS -->
+      <section id="projects">
+        <div class="section-label">PROJ_MODULES // ACTIVE</div>
+        <h2 class="section-title">ENGINEERING MODULES</h2>
+        
+        <div class="projects-grid">
+          
+          <!-- Project 01 -->
+          <div class="cyber-card project-card reveal-element">
+            <div class="project-header">
+              <span class="project-id">PROJ_01</span>
+              <div class="project-links">
+                <!-- Private repo, no link -->
+                <span class="cyber-badge" style="color: var(--text-muted); border-color: rgba(74, 106, 124, 0.2);">PRIVATE REPO</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="project-name">NMS-WEB Internship</h3>
+              <p class="project-desc">
+                Enterprise Network Management System frontend. Built responsive complex dashboards, resolved legacy cross-browser interface bugs, and debugged tricky asynchronous state synchronization issues under Redux Toolkit (BUG-3319).
+              </p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Redux</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Ant Design</span>
+            </div>
+          </div>
+
+          <!-- Project 02 -->
+          <div class="cyber-card project-card reveal-element delay-100">
+            <div class="project-header">
+              <span class="project-id">PROJ_02</span>
+              <div class="project-links">
+                <a href="https://github.com/Navneet9099" target="_blank" class="project-link" aria-label="GitHub Repository"><i class="lucide-github"></i></a>
+                <a href="https://navneetkesarwani.vercel.app/" target="_blank" class="project-link" aria-label="Live Demo"><i class="lucide-external-link"></i></a>
+              </div>
+            </div>
+            <div>
+              <h3 class="project-name">Youthopia Fest Website</h3>
+              <p class="project-desc">
+                Official cultural fest platform built for DIT University. Designed custom event schedule browsers, secure dynamic registration pathways, API gateways, and fully responsive layouts that maintained fast performance under traffic spikes.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Vue</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">TailwindCSS</span>
+            </div>
+          </div>
+
+          <!-- Project 03 -->
+          <div class="cyber-card project-card reveal-element">
+            <div class="project-header">
+              <span class="project-id">PROJ_03</span>
+              <div class="project-links">
+                <a href="https://github.com/Navneet9099" target="_blank" class="project-link" aria-label="GitHub Repository"><i class="lucide-github"></i></a>
+                <a href="https://navneetkesarwani.vercel.app/" target="_blank" class="project-link" aria-label="Live Demo"><i class="lucide-external-link"></i></a>
+              </div>
+            </div>
+            <div>
+              <h3 class="project-name">Sphurti Sports Platform</h3>
+              <p class="project-desc">
+                Full-stack annual sports fest system. Features live score tickers, team registration interfaces, dynamic brackets, and administrator dashboards. Successfully deployed on GoDaddy servers with real-time score updates.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Express</span>
+            </div>
+          </div>
+
+          <!-- Project 04 -->
+          <div class="cyber-card project-card reveal-element delay-100">
+            <div class="project-header">
+              <span class="project-id">PROJ_04</span>
+              <div class="project-links">
+                <a href="https://github.com/Navneet9099" target="_blank" class="project-link" aria-label="GitHub Repository"><i class="lucide-github"></i></a>
+                <a href="https://navneetkesarwani.vercel.app/" target="_blank" class="project-link" aria-label="Live Demo"><i class="lucide-external-link"></i></a>
+              </div>
+            </div>
+            <div>
+              <h3 class="project-name">Customer Survey Kiosk</h3>
+              <p class="project-desc">
+                Interactive customer feedback kiosk application. Engineered dynamic query branches, input state managers, feedback tracking systems, and a clean, mobile-first design deployed on Vercel cloud infrastructure.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Vercel</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">State Management</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 03: JOURNEY -->
+      <section id="experience">
+        <div class="section-label">SYSTEM EVOLUTION // TIMELINE</div>
+        <h2 class="section-title">JOURNEY & EXPERIENCES</h2>
+
+        <div class="timeline-container">
+          
+          <!-- Node 01 -->
+          <div class="timeline-item">
+            <div class="timeline-dot-center"></div>
+            <div class="timeline-card-wrapper">
+              <div class="cyber-card timeline-card">
+                <div class="timeline-phase">PHASE_01 [2023]</div>
+                <div class="timeline-title-row">
+                  <h3 class="timeline-role">B.Tech Computer Science</h3>
+                  <div class="timeline-org">DIT University</div>
+                </div>
+                <div class="timeline-duration">AUGUST 2023 - PRESENT</div>
+                <p class="timeline-desc">
+                  Initiated structural computer science fundamentals. Focused on Data Structures and Algorithms (DSA), Object-Oriented Programming (OOP) in Java & C++, and designed baseline websites using semantic HTML, vanilla CSS, and JavaScript.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 02 -->
+          <div class="timeline-item">
+            <div class="timeline-dot-center"></div>
+            <div class="timeline-card-wrapper">
+              <div class="cyber-card timeline-card">
+                <div class="timeline-phase">PHASE_02 [2024]</div>
+                <div class="timeline-title-row">
+                  <h3 class="timeline-role">Youthopia Web Project</h3>
+                  <div class="timeline-org">ACM Chapter, DIT University</div>
+                </div>
+                <div class="timeline-duration">JANUARY - OCTOBER 2024</div>
+                <p class="timeline-desc">
+                  Selected to head the frontend team for DIT's major annual fest website. Mastered React structure principles, state hooks, responsive styling frameworks, and connected event registration forms to backend servers.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 03 -->
+          <div class="timeline-item">
+            <div class="timeline-dot-center"></div>
+            <div class="timeline-card-wrapper">
+              <div class="cyber-card timeline-card">
+                <div class="timeline-phase">PHASE_03 [2024 - 2025]</div>
+                <div class="timeline-title-row">
+                  <h3 class="timeline-role">Sphurti Sports Platform</h3>
+                  <div class="timeline-org">Full-Stack Development</div>
+                </div>
+                <div class="timeline-duration">NOVEMBER 2024 - FEBRUARY 2025</div>
+                <p class="timeline-desc">
+                  Built a full-stack platform managing multiple sports registries. Structured REST API routes in Express, managed database clusters in MongoDB, implemented real-time live score updates, and successfully launched on a GoDaddy custom server.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 04 -->
+          <div class="timeline-item">
+            <div class="timeline-dot-center"></div>
+            <div class="timeline-card-wrapper">
+              <div class="cyber-card timeline-card">
+                <div class="timeline-phase">PHASE_04 [2025]</div>
+                <div class="timeline-title-row">
+                  <h3 class="timeline-role">ACM Web Co-Head</h3>
+                  <div class="timeline-org">ACM Student Chapter</div>
+                </div>
+                <div class="timeline-duration">MARCH 2025 - PRESENT</div>
+                <p class="timeline-desc">
+                  Promoted to ACM Web Co-Head position. Mentoring 50+ juniors, leading collaborative web platforms, conducting developer workshops, and managing design architecture layouts for the student chapter's software programs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 05 (Current) -->
+          <div class="timeline-item">
+            <div class="timeline-dot-center"></div>
+            <div class="timeline-card-wrapper">
+              <div class="cyber-card timeline-card" style="border-color: var(--accent-green); box-shadow: 0 0 15px rgba(0, 255, 136, 0.05);">
+                <div class="timeline-phase" style="color: var(--accent-green);">CURRENT [2025 - 2026]</div>
+                <div class="timeline-title-row">
+                  <h3 class="timeline-role">SDE Intern (Frontend)</h3>
+                  <div class="timeline-org" style="color: var(--accent-green);">Codeinbound LLP</div>
+                </div>
+                <div class="timeline-duration">DECEMBER 2025 - PRESENT</div>
+                <p class="timeline-desc">
+                  Engineering the NMS-WEB network management system. Working with React, Redux, and TypeScript. Debugging critical production bugs, analyzing browser layout anomalies, and writing formal Root Cause Analysis (RCA) documents.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 04: SKILLS & TOOLKIT -->
+      <section id="skills">
+        <div class="section-label">INTELLIGENCE TOOLKIT // SKILLS</div>
+        <h2 class="section-title">INTELLIGENCE STACK</h2>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Frontend -->
+          <div class="cyber-card skill-category-card reveal-element">
+            <div class="skill-card-header">
+              <i class="lucide-layout-grid"></i>
+              <h3 class="skill-card-title">Frontend Engineering</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">React / Redux</span><span class="skill-value">90%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="90%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">TypeScript / JavaScript</span><span class="skill-value">85%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="85%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">HTML5 / CSS3</span><span class="skill-value">95%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="95%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Ant Design / Tailwind</span><span class="skill-value">88%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="88%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend -->
+          <div class="cyber-card skill-category-card reveal-element delay-100">
+            <div class="skill-card-header">
+              <i class="lucide-database"></i>
+              <h3 class="skill-card-title">Backend & Languages</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Node.js / Express</span><span class="skill-value">80%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="80%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Java</span><span class="skill-value">85%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="85%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Python</span><span class="skill-value">75%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="75%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">C++</span><span class="skill-value">80%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="80%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: DevOps -->
+          <div class="cyber-card skill-category-card reveal-element delay-200">
+            <div class="skill-card-header">
+              <i class="lucide-server"></i>
+              <h3 class="skill-card-title">DevOps & Cloud</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Docker Containers</span><span class="skill-value">80%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="80%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">GCP Cloud Infrastructure</span><span class="skill-value">75%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="75%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">GitHub Actions CI/CD</span><span class="skill-value">78%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="78%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Linux / Shell Scripts</span><span class="skill-value">85%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="85%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Databases -->
+          <div class="cyber-card skill-category-card reveal-element">
+            <div class="skill-card-header">
+              <i class="lucide-hard-drive"></i>
+              <h3 class="skill-card-title">Databases</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">MongoDB</span><span class="skill-value">85%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="85%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">MySQL</span><span class="skill-value">80%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="80%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">PostgreSQL</span><span class="skill-value">70%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="70%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Workflow -->
+          <div class="cyber-card skill-category-card reveal-element delay-100">
+            <div class="skill-card-header">
+              <i class="lucide-sliders"></i>
+              <h3 class="skill-card-title">Tools & Workflow</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Git & GitHub</span><span class="skill-value">90%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="90%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">VS Code / Postman</span><span class="skill-value">95%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="95%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Jira / Microsoft Teams</span><span class="skill-value">85%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="85%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Agile Methods</span><span class="skill-value">80%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="80%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 6: Currently Learning -->
+          <div class="cyber-card skill-category-card reveal-element delay-200">
+            <div class="skill-card-header">
+              <i class="lucide-graduation-cap"></i>
+              <h3 class="skill-card-title">Currently Learning</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">React Native / Mobile UI</span><span class="skill-value">60%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="60%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Flutter / Dart</span><span class="skill-value">55%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="55%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info"><span class="skill-name">Kotlin / Swift</span><span class="skill-value">45%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="45%"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 05: METRICS -->
+      <section id="metrics">
+        <div class="section-label">SYSTEM TELEMETRY // LIVE_METRICS</div>
+        <h2 class="section-title">TELEMETRY PARAMETERS</h2>
+        
+        <div class="metrics-row">
+          
+          <!-- Metric 1 -->
+          <div class="cyber-card metric-card reveal-element">
+            <div class="metric-id">SYS.01 // CODE</div>
+            <i class="lucide-code-2"></i>
+            <div class="metric-number" data-target="600" data-suffix="+">0</div>
+            <div class="metric-label">LeetCode Solved</div>
+          </div>
+
+          <!-- Metric 2 -->
+          <div class="cyber-card metric-card reveal-element delay-100">
+            <div class="metric-id">SYS.02 // STAR</div>
+            <i class="lucide-rocket"></i>
+            <div class="metric-number" data-target="3" data-suffix="">0</div>
+            <div class="metric-label">Deployed Systems</div>
+          </div>
+
+          <!-- Metric 3 -->
+          <div class="cyber-card metric-card reveal-element delay-200">
+            <div class="metric-id">SYS.03 // BOLT</div>
+            <i class="lucide-briefcase"></i>
+            <div class="metric-number" data-target="6" data-suffix="">0</div>
+            <div class="metric-label">Months Experience</div>
+          </div>
+
+          <!-- Metric 4 -->
+          <div class="cyber-card metric-card reveal-element delay-300">
+            <div class="metric-id">SYS.04 // GROUP</div>
+            <i class="lucide-users"></i>
+            <div class="metric-number" data-target="50" data-suffix="+">0</div>
+            <div class="metric-label">ACM Juniors Mentored</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 06: CONTACT -->
+      <section id="contact">
+        <div class="section-label">INIT_COMM // TRANSMIT_READY</div>
+        <h2 class="section-title">TRANSMIT PACKET</h2>
+
+        <div class="contact-layout">
+          
+          <div class="contact-info reveal-element">
+            <p class="contact-blurb">
+              I build fast, highly responsive, production-grade web systems. Open to <span>Full Stack & Frontend Developer</span> roles, internships, and collaborations.
+            </p>
+            
+            <div class="status-badge-container">
+              <span class="cyber-badge green">
+                <span class="status-indicator"></span>OPEN TO OPPORTUNITIES
+              </span>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/Navneet9099" target="_blank" class="social-link-item">
+                <i class="lucide-github"></i>
+                <span>github.com/Navneet9099</span>
+              </a>
+              <a href="https://www.linkedin.com/in/navneet-kesarwani-181319287/" target="_blank" class="social-link-item">
+                <i class="lucide-linkedin"></i>
+                <span>linkedin.com/in/navneet-kesarwani</span>
+              </a>
+              <a href="mailto:navneetkesarwani9@gmail.com" class="social-link-item">
+                <i class="lucide-mail"></i>
+                <span>navneetkesarwani9@gmail.com</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Widget -->
+          <div class="contact-form-widget reveal-element delay-200">
+            <form id="cyber-contact-form" action="https://formspree.io/f/navneetkesarwani9@gmail.com" method="POST">
+              
+              <div class="form-group">
+                <label for="sender-name" class="form-label">ID Vector <span>(Name)</span></label>
+                <input type="text" name="name" id="sender-name" class="form-input" placeholder="e.g. Recruiter Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email" class="form-label">Comm Channel <span>(Email)</span></label>
+                <input type="email" name="email" id="sender-email" class="form-input" placeholder="e.g. contact@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message" class="form-label">Payload Data <span>(Message)</span></label>
+                <textarea name="message" id="sender-message" class="form-input" placeholder="Initiate handshake protocol..." required></textarea>
+              </div>
+
+              <button type="submit" class="cyber-btn" style="width: 100%;">
+                TRANSMIT MESSAGE <i class="lucide-send"></i>
+              </button>
+
+            </form>
+
+            <!-- Custom Cyber Alert Popup Inside Form Widget -->
+            <div class="form-alert" id="form-success-alert">
+              <i class="lucide-shield-check form-alert-icon"></i>
+              <div class="form-alert-title">TRANSMISSION SUCCESSFUL</div>
+              <p class="form-alert-desc">
+                Your connection handshake packet has been verified and delivered to Navneet Kesarwani.
+              </p>
+              <button class="cyber-btn" id="close-alert-btn" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">
+                DISMISS HUD
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-credits">
+          DESIGNED FOR <span>NK_V1.0</span> // POWERED BY <span>ANTIGRAVITY</span>
+        </div>
+        <div class="footer-status">
+          IP_GATEWAY: SECURE_TLS_1.3 // DEV_SERVER: PORT_8080
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <!-- Interactive JavaScript Scripts -->
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/counters.js"></script>
+  <script src="assets/js/form.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
